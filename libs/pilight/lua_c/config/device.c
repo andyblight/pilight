@@ -306,6 +306,20 @@ int plua_config_device(lua_State *L) {
 			case LABEL:
 				plua_config_device_label(L, dev);
 			break;
+			case FIRMWARE:
+			case PROCESS:
+			case RAW:
+			case WEATHER:
+			case CONTACT:
+			case XBMC:
+			case LIRC:
+			case WEBCAM:
+			case MOTION:
+			case DUSK:
+			case PING:
+			case ALARM:
+				// Ignore unused cases.
+			break;
 		}
 	}
 
