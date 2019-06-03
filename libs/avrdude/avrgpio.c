@@ -125,7 +125,7 @@ static int gpio_open(PROGRAMMER *pgm, char *port) {
 				gpio_fds[pgm->pinno[i]] = PINMODE_INPUT;
 				pinMode(pgm->pinno[i], PINMODE_INPUT);
 			} else {
-				gpio_fds[pgm->pinno[i]] = PINMODE_OUTPUT;;
+				gpio_fds[pgm->pinno[i]] = PINMODE_OUTPUT;
 				pinMode(pgm->pinno[i], PINMODE_OUTPUT);
 			}
 		}
