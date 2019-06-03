@@ -6,6 +6,8 @@ Makefile
 *.cmake
 CMakeCache.txt
 cmake_uninstall.cmake.in
+CMakeLists.txt.original
+CMakeLists.txt.tmp
 
 # Headers created when running cmake
 inc/defines.h
