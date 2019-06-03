@@ -30,11 +30,12 @@
 
 static int gpio_433_in = -1;
 static int gpio_433_out = -1;
+
+#if defined(__arm__) || defined(__mips__) || defined(__aarch64__) || defined(PILIGHT_UNITTEST)
 static int wait = 0;
 static int loopback = LOOPBACK;
 static int pollpri = UV_PRIORITIZED;
 
-#if defined(__arm__) || defined(__mips__) || defined(__aarch64__) || defined(PILIGHT_UNITTEST)
 typedef struct timestamp_t {
 	unsigned long first;
 	unsigned long second;
